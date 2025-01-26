@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #FAFCFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  padding: 0 40px;
+  width: 1920px;
+}
+
+.IbmPlexMonoFont {
+  font-family: "IBM Plex Mono", serif;
+}
+
+@media screen and (max-width: 1919px) {
+  #root {
+    width: 1536px;
+    padding: 0 19px;
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  #root {
+    width: 1366px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  #root {
+    width: 1280px;
+    
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  #root {
+    width: 100vw;
+    padding: 0 10px;
+  }
+}

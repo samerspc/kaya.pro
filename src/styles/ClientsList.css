@@ -1,0 +1,33 @@
+.clientsList-wrapper {
+    width: fit-content;
+    margin-top: 92px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clientsList-wrapper img {
+    width: 220px;
+}
+
+@media screen and (max-width: 1919px) {
+    .clientsList-wrapper {
+        margin-top: 60px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+  
+}
+
+@media screen and (max-width: 1365px) {
+  
+}
+
+@media screen and (max-width: 600px)  {
+
+}

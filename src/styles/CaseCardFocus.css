@@ -1,0 +1,35 @@
+.CaseCard-modal-layer {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: black;
+    opacity: 0.4;
+}
+.CaseCard-modal-layer.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CaseCard-modal-wrapper {
+    display: none;
+    width: 1600px;
+    height: 988px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(240, 244, 250, 0.3);
+    border: 1px solid rgba(41, 44, 50, 0.1);
+    border-radius: 24px;
+    position: fixed;
+    z-index: 1001;
+    background: red;
+    top: 0;
+    left: 0;
+}
+
+.CaseCard-modal-wrapper.open {
+    display: flex;
+}

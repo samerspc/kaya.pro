@@ -1,0 +1,68 @@
+.heading-wrapper {
+    width: auto;
+    height: auto;
+    margin-left: 50%;
+}
+
+#heading-text {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#heading-count {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    opacity: 0.6;
+    position: relative;
+    bottom: 24px;
+    left: 4px;
+
+}
+
+#studio-margin {
+    margin-top: 216px;
+}
+#clients-margin {
+    margin-top: 178px;
+}
+#projects-margin {
+    margin-top: 207px;
+}
+
+#text2 {
+    margin-top: 50px;
+    width: 409px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+@media screen and (max-width: 1919px) {
+    #studio-margin {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    #studio-margin {
+        margin-top: 170px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+
+}
+
+@media screen and (max-width: 600px)  {
+
+}
