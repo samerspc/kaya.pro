@@ -13,28 +13,28 @@ import Footer from './blocks/Footer'
 function App() {
 
   const clients = [
-    '/client.svg',
-    '/client.svg',
-    '/client.svg',
-    '/client.svg',
-    '/client.svg',
+    './client.svg',
+    './client.svg',
+    './client.svg',
+    './client.svg',
+    './client.svg',
   ]
 
   const cases = [
     {
       name: 'Knitted',
       short: 'Онлайн-магазин с крутыми винтажными вещами в Москве',
-      img: '/knitted.png'
+      img: './knitted.png'
     },
     {
       name: 'Knitted',
       short: 'Онлайн-магазин с крутыми винтажными вещами в Москве',
-      img: '/knitted.png'
+      img: './knitted.png'
     },
     {
       name: 'Knitted',
       short: 'Онлайн-магазин с крутыми винтажными вещами в Москве',
-      img: '/knitted.png'
+      img: './knitted.png'
     },
   ]
 
