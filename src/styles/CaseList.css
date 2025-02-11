@@ -4,9 +4,10 @@
     margin-top: 40px;
 }
 
-@media screen and (max-width: 1820px) {
+@media screen and (max-width: 1919px) {
     .caseList-wrapper {
         margin-top: 40px;
+        /* justify-content: center; */
     }
 }
 

@@ -61,6 +61,18 @@
 
 }
 
+@media screen and (max-width: 1919px) {
+    .CaseCard-wrapper {
+        width: 580px;
+        height: 420px;
+    }
+    
+    .CaseCard-imgLayer {
+        width: 560px;
+        height: 342px;
+    }
+}
+
 @media screen and (max-width: 1820px) {
     .CaseCard-wrapper {
         width: 499px;
