@@ -1,7 +1,7 @@
 import '../styles/Footer.css';
 
 import arrow from '/arrow.svg'
-import up from '/up.svg';
+import up from '/upL.svg'
 
 function Footer() {
 
@@ -42,7 +42,11 @@ function Footer() {
 
             <div className='footer-down'>
                 <p><span className='geist'>©2025</span> kaya laboratories</p>
-                <a href="#up"><img src={up} alt="" /></a>
+                <a href="#up">
+                    <div className='buttonUp buttonUpLB'>
+                        <img src={up} alt="" />
+                    </div>
+                </a>
             </div>
 
         </div>

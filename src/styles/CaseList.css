@@ -1,5 +1,27 @@
 .caseList-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1820px) {
+    .caseList-wrapper {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    .caseList-wrapper {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .caseList-wrapper {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px)  {
+
 }

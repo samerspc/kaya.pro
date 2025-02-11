@@ -5,62 +5,173 @@
 }
 
 #heading-text {
-    font-size: 52px;
     font-weight: 400;
-    line-height: 52px;
-    letter-spacing: -0.02em;
-    text-align: left;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2%;
+    color: rgba(41, 44, 50, 1);
+
 }
 
 #heading-count {
-    font-size: 20px;
     font-weight: 400;
-    line-height: 25px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    opacity: 0.6;
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: 0%;
+
     position: relative;
     bottom: 24px;
     left: 4px;
 
+    color: rgba(41, 44, 50, 0.4);
 }
 
 #studio-margin {
-    margin-top: 216px;
+    margin-top: 218px;
 }
 #clients-margin {
-    margin-top: 178px;
+    margin-top: 206px;
 }
 #projects-margin {
-    margin-top: 207px;
+    margin-top: 273px;
 }
 
 #text2 {
     margin-top: 50px;
-    width: 409px;
+    width: 330px;
 
-    font-size: 24px;
     font-weight: 400;
-    line-height: 28.8px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-size: 21px;
+    line-height: 24.15px;
+    letter-spacing: 0%;
+
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1820px) {
+    #heading-text {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: -2%;
+    
+    }
+    
+    #heading-count {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: -2%;
+
+        bottom: 19px;
+        left: 4px;
+    
+    }
+    
     #studio-margin {
-        margin-top: 150px;
+        margin-top: 143px;
+    }
+    #clients-margin {
+        margin-top: 143px;
+    }
+    #projects-margin {
+        margin-top: 140px;
+    }
+    
+    #text2 {
+        margin-top: 40px;
+        width: 273px;
+    
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 21.85px;
+        letter-spacing: 0%;
+
+    
     }
 }
 
 @media screen and (max-width: 1535px) {
+    #heading-text {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -2%;
+    
+    }
+    
+    #heading-count {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 0%;
+
+        bottom: 15px;
+        left: 2px;
+    
+    }
+    
     #studio-margin {
-        margin-top: 170px;
+        margin-top: 140px;
+    }
+    #clients-margin {
+        margin-top: 140px;
+    }
+    #projects-margin {
+        margin-top: 140px;
+    }
+    
+    #text2 {
+        margin-top: 20px;
+        width: 273px;
+    
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20.4px;
+        letter-spacing: 0%;
+    
     }
 }
 
 @media screen and (max-width: 1365px) {
+    #heading-text {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -2%;
+    
+    }
+    
+    #heading-count {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: 0%;
 
+        bottom: 15px;
+        left: 2px;
+    
+    }
+    
+    #studio-margin {
+        margin-top: 100px;
+    }
+    #clients-margin {
+        margin-top: 100px;
+    }
+    #projects-margin {
+        margin-top: 100px;
+    }
+    
+    #text2 {
+        margin-top: 20px;
+        width: 273px;
+    
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 21.85px;
+        letter-spacing: 0%;
+
+    }
 }
 
 @media screen and (max-width: 600px)  {

@@ -27,7 +27,20 @@ body {
   font-family: "IBM Plex Mono", serif;
 }
 
-@media screen and (max-width: 1919px) {
+.textD {
+  color: rgba(250, 252, 255, 1);
+}
+
+.bgD {
+  background: rgba(9, 10, 12, 1);
+}
+
+.brD {
+  border: 1px solid rgba(250, 252, 255, 0.05);
+}
+    
+
+@media screen and (max-width: 1820px) {
   #root {
     width: 1536px;
     padding: 0 19px;

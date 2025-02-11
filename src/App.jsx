@@ -3,14 +3,28 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import Title from './blocks/title'
+import Title from './blocks/Title'
 import Heading from './components/Heading'
 import Studio from './blocks/Studio'
 import ClientsList from './blocks/ClientsList'
 import CaseList from './blocks/CaseList'
 import Footer from './blocks/Footer'
+import StickyMenu from './components/StickyMenu'
 
 function App() {
+
+  const [theme, setTheme] = useState(true);
+
+  const handleSetThemeDark = () => {
+    setTheme(false);
+  }
+  const handleSetThemeLight = () => {
+    setTheme(true);
+  }
+
+  const show = () => {
+    console.log(theme)
+  }
 
   const clients = [
     './client.svg',
@@ -40,6 +54,7 @@ function App() {
 
   return (
     <>
+      <StickyMenu handleSetThemeLight={handleSetThemeLight} handleSetThemeDark={handleSetThemeDark} theme={theme}/>
       <Title />
       
       <Heading text={'Студия'} count={'3'} id={'studio-margin'} text_2={false}/>

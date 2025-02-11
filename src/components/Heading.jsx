@@ -12,7 +12,7 @@ function Heading({text, count, id, text_2}) {
         <div className='heading-wrapper' id={id}>
             <span id='heading-text'>{text}</span>
             <span id='heading-count'>
-                <span className='geist'>{`(`}</span>{count}<span className='geist'>{`)`}</span>
+                <span className='geist'>{count}</span>
             </span>
 
             { text_2 ? 

@@ -1,6 +1,6 @@
 .clientsList-wrapper {
     width: fit-content;
-    margin-top: 92px;
+    margin-top: 60px;
     display: flex;
     gap: 80px;
     align-items: center;
@@ -13,19 +13,37 @@
     width: 220px;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1820px) {
     .clientsList-wrapper {
-        margin-top: 60px;
+        margin-top: 39px;
         gap: 20px;
+    }
+    
+    .clientsList-wrapper img {
+        width: 220px;
     }
 }
 
 @media screen and (max-width: 1535px) {
-  
+    .clientsList-wrapper {
+        margin-top: 40px;
+        gap: 20px;
+    }
+    
+    .clientsList-wrapper img {
+        width: 164px;
+    }
 }
 
 @media screen and (max-width: 1365px) {
-  
+    .clientsList-wrapper {
+        margin-top: 40px;
+        gap: 20px;
+    }
+    
+    .clientsList-wrapper img {
+        width: 164px;
+    }
 }
 
 @media screen and (max-width: 600px)  {

@@ -1,0 +1,226 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 30px 40px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.hidden {
+    transform: translateY(-100%);
+}
+  
+.visible {
+    transform: translateY(0);
+}
+  
+
+#logo {
+    color: rgba(41, 44, 50, 0.6);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 4%;
+}
+
+.menu nav {
+    display: flex;
+    gap: 13px;
+}
+
+.nav-item {
+    padding: 16px;
+    border-radius: 100px;
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -2%;
+
+    transition: all ease-in-out 0.1s;
+
+}
+
+.themeSetter {
+    padding: 11.14px 10px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all ease-in-out 0.1s;
+}
+
+.sun {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.moon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.nav-itemL {
+    background: rgba(250, 252, 255, 1);
+    border: 1px solid rgba(41, 44, 50, 0.2);
+    color: rgba(41, 44, 50, 1);
+    
+}
+
+.nav-itemD {
+    background: rgba(9, 10, 12, 1);
+    border: 1px solid rgba(250, 252, 255, 0.05);
+    color: rgba(250, 252, 255, 1);
+
+    
+}
+
+@media screen and (max-width: 1820px) {
+    .menu {
+        padding: 30px 20px;
+    }
+      
+    
+    #logo {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 4%;
+
+    }
+    
+    .menu nav {
+        gap: 12px;
+    }
+    
+    .nav-item {
+        padding: 13.5px 16px;
+        border-radius: 100px;
+    
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -2%;
+    
+    }
+    
+    .themeSetter {
+        padding: 9.13px 10px;
+        border-radius: 100px;
+        gap: 12px;
+    }
+
+    .sun {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .moon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    .menu {
+        padding: 30px 20px;
+    }
+    
+    #logo {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 4%;
+
+    }
+    
+    .menu nav {
+        gap: 12px;
+    }
+    
+    .nav-item {
+        padding: 13.5px 16px;
+        border-radius: 100px;
+    
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 17px;
+        letter-spacing: -2%;
+
+    }
+    
+    .themeSetter {
+        padding: 9.13px 10px;
+        border-radius: 100px;
+        gap: 12px;
+    }
+
+    .sun {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .moon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .menu {
+        padding: 30px 20px;
+    }
+    
+    #logo {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 4%;
+
+    }
+    
+    .menu nav {
+        gap: 8px;
+    }
+    
+    .nav-item {
+        padding: 12.5px 16px;
+        border-radius: 100px;
+    
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: -2%;
+
+    }
+    
+    .themeSetter {
+        padding: 7.13px 10px;
+        border-radius: 100px;
+        gap: 12px;
+    }
+
+    .sun {
+        width: 26px;
+        height: 26px;
+    }
+    
+    .moon {
+        width: 20px;
+        height: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 600px)  {
+
+}

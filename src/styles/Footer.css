@@ -3,17 +3,16 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 94px;
 }
 .footer-title {
-    width: 764px;
-    font-size: 100px;
+    width: 610px;
     font-weight: 400;
-    line-height: 110px;
-    letter-spacing: -0.02em;
+    font-size: 72px;
+    line-height: 79.2px;
+    letter-spacing: -2%;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -23,42 +22,38 @@
     position: relative;
     width: 50%;
     left: 50%;
-    top: 60px;
+    top: 40px;
 }
 .footer-form-wrapper img {
-    margin-left: 48px;
+    margin-left: 19px;
 }
 
 .footer-form-bigTitle {
-    margin-top: 90px;
-    font-size: 52px;
+    margin-top: 72px;
     font-weight: 400;
-    line-height: 52px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2%;
+
 }
 
 .footer-form-miniTitle {
-    margin-top: 70px;
-    font-size: 32px;
+    margin-top: 40px;
     font-weight: 400;
-    line-height: 35.2px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
 
 }
 
 .footer-form {
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .footer-form-info {
-    padding: 29px 0;
+    padding: 27.5px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,23 +62,21 @@
 .footer-form-info-1 {
     color: rgba(41, 44, 50, 0.6);
     font-family: "IBM Plex Mono", serif;
-    font-size: 20px;
-    font-weight: 300;   
-    line-height: 22px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: -2%;
+
 }
 
 .footer-form-info-2 {
     color: rgba(41, 44, 50, 1);
     font-family: "IBM Plex Mono", serif;
-    font-size: 24px;
     font-weight: 300;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    text-align: left;
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: -2%;
+
 }
 
 .footer-down {
@@ -96,17 +89,208 @@
 }
 
 .footer-down p {
-    font-size: 24px;
     font-weight: 400;
-    line-height: 26.4px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-size: 21px;
+    line-height: 23.1px;
+    letter-spacing: 2%;
+
 }
 
-.footer-down img {
-    cursor: pointer;
-    width: 55px;
-    height: 55px;
+.buttonUp {
+    width: 52px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.1s;
+}
+
+.buttonUpLB {
+    border: 1.5px solid rgba(41, 44, 50, 0.1);
+    border-radius: 100px;
+}
+
+.buttonUpLB:hover {
+    background: rgba(41, 44, 50, 0.1);
+    border: rgba(41, 44, 50, 0.1);
+}
+
+@media screen and (max-width: 1820px) {
+    .footer-wrapper {
+        margin-top: 100px;
+    }
+    .footer-title {
+        width: 525px;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 61.6px;
+        letter-spacing: -2%;
+        text-align: center;
+    }
+    
+    .footer-form-wrapper {
+        top: 40px;
+    }
+    .footer-form-wrapper img {
+        margin-left: 24px;
+    }
+    
+    .footer-form-bigTitle {
+        margin-top: 65px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: -2%;
+
+    
+    }
+    
+    .footer-form-miniTitle {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 21px;
+        letter-spacing: 0%;
+    
+    }
+    
+    .footer-form {
+        margin-top: 20px;
+    }
+    
+    .footer-form-info {
+        padding: 27.5px 0;
+    }
+    
+    .footer-form-info-1 {
+        color: rgba(41, 44, 50, 0.6);
+        font-family: "IBM Plex Mono", serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 15.4px;
+        letter-spacing: -2%;
+    
+    }
+    
+    .footer-form-info-2 {
+        color: rgba(41, 44, 50, 1);
+        font-family: "IBM Plex Mono", serif;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 17px;
+        letter-spacing: -2%;
+    
+    }
+    
+    .footer-down {
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-down p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 20.9px;
+        letter-spacing: 2%;
+    
+    }
+    
+    .buttonUp {
+        width: 52px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    .footer-wrapper {
+        margin-top: 100px;
+    }
+    .footer-title {
+        width: 525px;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 61.6px;
+        letter-spacing: -2%;
+        text-align: center;
+    }
+    
+    .footer-form-wrapper {
+        top: 40px;
+    }
+    .footer-form-wrapper img {
+        margin-left: 24px;
+    }
+    
+    .footer-form-bigTitle {
+        margin-top: 65px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -2%;
+
+    
+    }
+    
+    .footer-form-miniTitle {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 19px;
+        letter-spacing: 0%;
+    
+    }
+    
+    .footer-form {
+        margin-top: 20px;
+    }
+    
+    .footer-form-info {
+        padding: 21px 0;
+    }
+    
+    .footer-form-info-1 {
+        color: rgba(41, 44, 50, 0.6);
+        font-family: "IBM Plex Mono", serif;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 14.3px;
+        letter-spacing: -2%;
+    
+    }
+    
+    .footer-form-info-2 {
+        color: rgba(41, 44, 50, 1);
+        font-family: "IBM Plex Mono", serif;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 15px;
+        letter-spacing: -2%;
+    
+    }
+    
+    .footer-down {
+        margin-top: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-down p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 20.9px;
+        letter-spacing: 2%;
+    
+    }
+    
+    .buttonUp {
+        width: 52px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+  
+}
+
+@media screen and (max-width: 600px)  {
+
 }
