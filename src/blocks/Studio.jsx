@@ -2,8 +2,9 @@ import { useState } from 'react';
 import '../styles/Studio.css';
 
 import plus from '/plus.svg';
+import wPlus from '/wPlus.svg';
 
-function Studio() {
+function Studio({theme}) {
 
     const [open, setOpen] = useState(null);
 
@@ -27,7 +28,7 @@ function Studio() {
                 </div>
 
                 <div className='studio-accordion-wrapper'>
-                    <div className='line'></div>
+                <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                     {data.map((item, index) => (
                         <>
@@ -38,8 +39,8 @@ function Studio() {
                                 
                                 <p>{item.title}</p>
                                 
-                                <img src={plus} alt="" 
-                                    className={open === item.id ? 'rotation' : ''}
+                                <img src={theme ? plus : wPlus} alt="" 
+                                    className={`${open === item.id ? 'rotation' : ''}`}
                                     />
                                 
                             
@@ -50,12 +51,12 @@ function Studio() {
                             <div
                                 className={`accordion-content ${
                                     open === item.id ? "open" : "closed"
-                                }`}
+                                } ${theme ? 'accordion-contentPL' : 'accordion-contentPD'}`}
                                 >
                                 <p>{item.content}</p>
                             </div>
                         </div>
-                        <div className='line'></div>
+                        <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
                         </>
                     ))}
 

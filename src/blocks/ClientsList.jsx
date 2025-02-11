@@ -1,6 +1,6 @@
 import '../styles/ClientsList.css';
 
-function ClientsList({clients}) {
+function ClientsList({clients, theme}) {
 
     return (
         <>

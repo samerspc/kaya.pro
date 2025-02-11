@@ -1,41 +1,43 @@
 import '../styles/Footer.css';
 
 import arrow from '/arrow.svg'
+import arrowW from '/arrowW.svg'
 import up from '/upL.svg'
+import upW from '/upW.svg'
 
-function Footer() {
+function Footer({theme}) {
 
   return (
     <>
         <div className='footer-wrapper'>
             <p className='footer-title'>Понравились наши проекты<span className='geist'>?</span></p>
             <div className='footer-form-wrapper'>
-                <img src={arrow} alt="" />
+                <img src={theme ? arrow : arrowW} alt="" />
                 <p className='footer-form-bigTitle'>Давайте поговорим <span className='geist'>{`:)`}</span></p>
                 <p className='footer-form-miniTitle'>Свяжитесь с нами</p>
                 <div className='footer-form'>
-                    <div className='line'></div>
+                    <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                     <div className='footer-form-info'>
-                        <span className='footer-form-info-1'>ПОЧТА</span>
-                        <span className='footer-form-info-2' style={{borderBottom: '1px solid rgba(41, 44, 50, 1)'}}>help@kaya.pro</span>
+                        <span className={`footer-form-info-1 ${theme ? 'footer-form-info-1L' : 'footer-form-info-1D'}`}>ПОЧТА</span>
+                        <span className={`footer-form-info-2 ${theme ? 'footer-form-info-2L' : 'footer-form-info-2D'}`}>help@kaya.pro</span>
                     </div>
                     
-                    <div className='line'></div>
+                    <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                     <div className='footer-form-info'>
-                        <span className='footer-form-info-1'>ТЕЛЕГРАМ</span>
-                        <span className='footer-form-info-2' style={{borderBottom: '1px solid rgba(41, 44, 50, 1)'}}>kayalabs</span>
+                        <span className={`footer-form-info-1 ${theme ? 'footer-form-info-1L' : 'footer-form-info-1D'}`}>ТЕЛЕГРАМ</span>
+                        <span className={`footer-form-info-2 ${theme ? 'footer-form-info-2L' : 'footer-form-info-2D'}`}>kayalabs</span>
                     </div>
 
-                    <div className='line'></div>
+                    <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                     <div className='footer-form-info'>
-                        <span className='footer-form-info-1'>ЛОКАЦИЯ</span>
-                        <span className='footer-form-info-2'>Россия, Москва</span>
+                        <span className={`footer-form-info-1 ${theme ? 'footer-form-info-1L' : 'footer-form-info-1D'}`}>ЛОКАЦИЯ</span>
+                        <span className={`footer-form-info-2 ${theme ? 'footer-form-info-2LR' : 'footer-form-info-2DR'}`} >Россия, Москва</span>
                     </div>
 
-                    <div className='line'></div>
+                    <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                 </div>
             </div>
@@ -43,8 +45,8 @@ function Footer() {
             <div className='footer-down'>
                 <p><span className='geist'>©2025</span> kaya laboratories</p>
                 <a href="#up">
-                    <div className='buttonUp buttonUpLB'>
-                        <img src={up} alt="" />
+                    <div className={`buttonUp ${ theme ? 'buttonUpLB' : 'buttonUpDB'}`}>
+                        <img src={theme ? up : upW} alt="" />
                     </div>
                 </a>
             </div>

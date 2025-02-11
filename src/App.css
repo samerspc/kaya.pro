@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-html, body {
+/* html, body {
   background: #FAFCFF;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -16,6 +16,25 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
+  transition: all ease-in-out 0.1s;
+}
+
+.bodyL {
+  background: #FAFCFF;
+  color: #292C32;
+}
+
+.bodyD {
+  background: rgba(9, 10, 12, 1);
+  color: rgba(250, 252, 255, 1);
+}
+
+.htmlBgL {
+  background: #FAFCFF;
+}
+
+.htmlBgD {
+  background: rgba(9, 10, 12, 1);
 }
 
 #root {

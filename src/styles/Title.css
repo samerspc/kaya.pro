@@ -23,11 +23,18 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
-.lightText-main {
+.titile-nameL1 {
     color: rgba(41, 44, 50, 1);
 }
-.lightText-grey {
+.titile-nameL2 {
     color: rgba(41, 44, 50, 0.4);
+}
+.titile-nameD1 {
+    color: rgba(250, 252, 255, 1);
+
+}
+.titile-nameD2 {
+    color: rgba(250, 252, 255, 0.4);
 }
 
 .titile-text {
@@ -74,11 +81,19 @@
     letter-spacing: -0.02em;
     text-align: right;
 
-    opacity: 0.8;
-    border-bottom: 1px solid rgba(41, 44, 50, 1);
-
     right: 0;
     bottom: 0;
+    opacity: 0.8;
+}
+
+.titile-text_3L {
+    color: rgba(41, 44, 50, 0.8);
+    border-bottom: 1px solid rgba(41, 44, 50, 0.8);
+}
+
+.titile-text_3D {
+    color: rgba(250, 252, 255, 0.8);
+    border-bottom: 1px solid rgba(250, 252, 255, 0.8);
 }
 
 @media screen and (max-width: 1820px) {

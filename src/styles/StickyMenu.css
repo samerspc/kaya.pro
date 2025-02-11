@@ -21,11 +21,18 @@
   
 
 #logo {
-    color: rgba(41, 44, 50, 0.6);
     font-weight: 400;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 4%;
+}
+
+.logoL {
+    color: rgba(41, 44, 50, 0.6);
+}
+
+.logoD {
+    color: rgba(250, 252, 255, 0.6);
 }
 
 .menu nav {
@@ -55,33 +62,36 @@
     justify-content: center;
     gap: 12px;
     transition: all ease-in-out 0.1s;
+    cursor: pointer;
 }
 
 .sun {
     width: 28px;
     height: 28px;
-    cursor: pointer;
 }
 
 .moon {
     width: 22px;
     height: 22px;
-    cursor: pointer;
 }
 
 .nav-itemL {
     background: rgba(250, 252, 255, 1);
-    border: 1px solid rgba(41, 44, 50, 0.2);
-    color: rgba(41, 44, 50, 1);
-    
+    border: 1px solid #E9E9EA;
+    color: rgba(41, 44, 50, 1);   
+}
+.nav-itemL:hover {
+    background: #E9E9EA;
 }
 
 .nav-itemD {
     background: rgba(9, 10, 12, 1);
-    border: 1px solid rgba(250, 252, 255, 0.05);
+    border: 1px solid #212225;
     color: rgba(250, 252, 255, 1);
+}
+.nav-itemD:hover {
+    background: #212225;
 
-    
 }
 
 @media screen and (max-width: 1820px) {

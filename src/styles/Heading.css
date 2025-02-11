@@ -9,8 +9,23 @@
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2%;
-    color: rgba(41, 44, 50, 1);
 
+}
+
+.heading-textL {
+    color: rgba(41, 44, 50, 1);
+}
+
+.heading-textD {
+    color: rgba(250, 252, 255, 1);
+}
+
+.heading-countL {
+    color: rgba(41, 44, 50, 0.4);
+}
+
+.heading-countD {
+    color: rgba(250, 252, 255, 0.4);
 }
 
 #heading-count {
@@ -23,7 +38,6 @@
     bottom: 24px;
     left: 4px;
 
-    color: rgba(41, 44, 50, 0.4);
 }
 
 #studio-margin {

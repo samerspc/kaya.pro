@@ -26,6 +26,7 @@
 }
 .footer-form-wrapper img {
     margin-left: 19px;
+    width: 134px;
 }
 
 .footer-form-bigTitle {
@@ -60,7 +61,6 @@
 }
 
 .footer-form-info-1 {
-    color: rgba(41, 44, 50, 0.6);
     font-family: "IBM Plex Mono", serif;
     font-weight: 300;
     font-size: 17px;
@@ -68,15 +68,34 @@
     letter-spacing: -2%;
 
 }
+.footer-form-info-1L {
+    color: rgba(41, 44, 50, 0.6);
+}
+.footer-form-info-1D {
+    color: rgba(250, 252, 255, 0.6);
+
+}
 
 .footer-form-info-2 {
-    color: rgba(41, 44, 50, 1);
     font-family: "IBM Plex Mono", serif;
     font-weight: 300;
     font-size: 19px;
     line-height: 19px;
     letter-spacing: -2%;
-
+}
+.footer-form-info-2L {
+    color: rgba(41, 44, 50, 1);
+    border-bottom: 1px solid rgba(41, 44, 50, 1);
+}
+.footer-form-info-2D {
+    color:rgba(250, 252, 255, 1);
+    border-bottom: 0.5px solid rgba(250, 252, 255, 1);
+}
+.footer-form-info-2LR {
+    color: rgba(41, 44, 50, 1);
+}
+.footer-form-info-2DR {
+    color:rgba(250, 252, 255, 1);
 }
 
 .footer-down {
@@ -109,10 +128,18 @@
     border: 1.5px solid rgba(41, 44, 50, 0.1);
     border-radius: 100px;
 }
-
 .buttonUpLB:hover {
     background: rgba(41, 44, 50, 0.1);
     border: rgba(41, 44, 50, 0.1);
+}
+
+
+.buttonUpDB {
+    border: 1.5px solid #393A3D;
+    border-radius: 100px;
+}
+.buttonUpDB:hover {
+    background: #393A3D;
 }
 
 @media screen and (max-width: 1820px) {
@@ -163,7 +190,6 @@
     }
     
     .footer-form-info-1 {
-        color: rgba(41, 44, 50, 0.6);
         font-family: "IBM Plex Mono", serif;
         font-weight: 300;
         font-size: 14px;
@@ -173,7 +199,6 @@
     }
     
     .footer-form-info-2 {
-        color: rgba(41, 44, 50, 1);
         font-family: "IBM Plex Mono", serif;
         font-weight: 300;
         font-size: 17px;
@@ -249,7 +274,6 @@
     }
     
     .footer-form-info-1 {
-        color: rgba(41, 44, 50, 0.6);
         font-family: "IBM Plex Mono", serif;
         font-weight: 300;
         font-size: 13px;
@@ -259,7 +283,6 @@
     }
     
     .footer-form-info-2 {
-        color: rgba(41, 44, 50, 1);
         font-family: "IBM Plex Mono", serif;
         font-weight: 300;
         font-size: 15px;

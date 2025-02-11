@@ -14,12 +14,22 @@ import StickyMenu from './components/StickyMenu'
 function App() {
 
   const [theme, setTheme] = useState(true);
+  document.body.classList.add("bodyL");
 
-  const handleSetThemeDark = () => {
-    setTheme(false);
-  }
-  const handleSetThemeLight = () => {
-    setTheme(true);
+  const handleSetTheme = () => {
+    if (theme) {
+      setTheme(false);
+      document.body.classList.add("bodyD");
+      document.body.classList.remove("bodyL");
+      document.documentElement.classList.add("htmlBgD");
+      document.documentElement.classList.remove("htmlBgL");
+    } else {
+      setTheme(true);
+      document.body.classList.add("bodyL");
+      document.body.classList.remove("bodyD");
+      document.documentElement.classList.add("htmlBgL");
+      document.documentElement.classList.remove("htmlBgD");
+    }
   }
 
   const show = () => {
@@ -54,19 +64,19 @@ function App() {
 
   return (
     <>
-      <StickyMenu handleSetThemeLight={handleSetThemeLight} handleSetThemeDark={handleSetThemeDark} theme={theme}/>
-      <Title />
+      <StickyMenu handleSetTheme={handleSetTheme} theme={theme}/>
+      <Title theme={theme} />
       
-      <Heading text={'Студия'} count={'3'} id={'studio-margin'} text_2={false}/>
-      <Studio />
+      <Heading text={'Студия'} count={'3'} id={'studio-margin'} text_2={false} theme={theme}/>
+      <Studio theme={theme}/>
       
-      <Heading text={'Партнеры'} count={'3'} id={'clients-margin'} text_2={'Нашим решениям доверяют топовые компании страны'}/>
-      <ClientsList clients={clients}/>
+      <Heading text={'Партнеры'} count={'3'} id={'clients-margin'} text_2={'Нашим решениям доверяют топовые компании страны'} theme={theme}/>
+      <ClientsList clients={clients} theme={theme}/>
 
-      <Heading text={'Проекты'} count={'3'} id={'projects-margin'} text_2={false}/>
-      <CaseList cases={cases}></CaseList>
+      <Heading text={'Проекты'} count={'3'} id={'projects-margin'} text_2={false} theme={theme}/>
+      <CaseList cases={cases} theme={theme}></CaseList>
 
-      <Footer />
+      <Footer theme={theme}/>
     </>
   )
 }

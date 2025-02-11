@@ -1,6 +1,6 @@
 import '../styles/Heading.css';
 
-function Heading({text, count, id, text_2}) {
+function Heading({text, count, id, text_2, theme}) {
 
     const style = {
 
@@ -10,8 +10,8 @@ function Heading({text, count, id, text_2}) {
     return (
         <>
         <div className='heading-wrapper' id={id}>
-            <span id='heading-text'>{text}</span>
-            <span id='heading-count'>
+            <span id='heading-text' className={theme ? 'heading-textL' : 'heading-textD'}>{text}</span>
+            <span id='heading-count' className={theme ? 'heading-countL' : 'heading-countD'}>
                 <span className='geist'>{count}</span>
             </span>
 
