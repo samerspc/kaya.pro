@@ -280,7 +280,7 @@
     }
     
     #titile-text_3 {
-        width: 114px;
+        width: 220px;
     
         font-family: "IBM Plex Mono", serif;
         font-weight: 400;
@@ -306,6 +306,10 @@
         height: 56px;
         border-radius: 100px;
     }
+    .titile-mobile-button1 a {
+        width: 14px;
+        height: 20px;
+    }
     .titile-mobile-button1 img {
         rotate: 180deg;
     }
@@ -316,5 +320,14 @@
         height: 56px;
         width: calc(100% - 66px);
         border-radius: 39px;
+    }
+    .titile-mobile-button2 a {
+        text-decoration: none;   
+    }
+    .aL {
+        color: rgba(41, 44, 50, 1);  
+    }
+    .aD {
+        color: rgba(250, 252, 255, 1);
     }
 }

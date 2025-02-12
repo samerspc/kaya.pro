@@ -37,7 +37,7 @@ function App() {
   }
 
   const clients = [
-    './client.svg',
+    './stk_logo.svg',
     './client.svg',
     './client.svg',
     './client.svg',
@@ -76,13 +76,13 @@ function App() {
       <StickyMenu handleSetTheme={handleSetTheme} theme={theme}/>
       <Title theme={theme} />
       
-      <Heading text={'Студия'} count={'3'} id={'studio-margin'} text_2={false} theme={theme}/>
+      <Heading text={'Студия'} count={'3'} id={'studio'} text_2={false} theme={theme}/>
       <Studio theme={theme}/>
       
-      <Heading text={'Партнеры'} count={'3'} id={'clients-margin'} text_2={'Нашим решениям доверяют топовые компании страны'} theme={theme}/>
-      <ClientsList clients={clients} theme={theme}/>
+      <Heading text={'Партнеры'} count={'3'} id={'clients'} text_2={'Нашим решениям доверяют топовые компании страны'} theme={theme}/>
+      <ClientsList theme={theme}/>
 
-      <Heading text={'Проекты'} count={'3'} id={'projects-margin'} text_2={false} theme={theme}/>
+      <Heading text={'Проекты'} count={'3'} id={'projects'} text_2={false} theme={theme}/>
       <CaseList cases={cases} theme={theme}></CaseList>
 
       <Footer theme={theme}/>

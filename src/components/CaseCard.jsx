@@ -31,7 +31,7 @@ function CaseCard({caseItem, theme}) {
         </div>
         
         {!isMobile ? 
-        <div className={`CaseCard-modal-layer ${open ? 'open' : ''} ${theme ? 'bgL' : 'bgD'}`} onClick={() => handleModalClose()}></div>
+        <div className={`CaseCard-modal-layer ${open ? 'open' : ''}`} onClick={() => handleModalClose()}></div>
         :
         <div className={`CaseCard-modal-layer ${open ? 'open' : ''} ${theme ? 'bgL' : 'bgD'}`}>
 

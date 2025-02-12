@@ -9,7 +9,7 @@ function Footer({theme}) {
 
   return (
     <>
-        <div className='footer-wrapper'>
+        <div className='footer-wrapper' id='contacts'>
             <p className='footer-title'>Понравились наши проекты<span className='geist'>?</span></p>
             <div className='footer-form-wrapper'>
                 <img src={theme ? arrow : arrowW} alt="" />
@@ -20,21 +20,21 @@ function Footer({theme}) {
 
                     <div className='footer-form-info'>
                         <span className={`footer-form-info-1 ${theme ? 'footer-form-info-1L' : 'footer-form-info-1D'}`}>ПОЧТА</span>
-                        <span className={`footer-form-info-2 ${theme ? 'footer-form-info-2L' : 'footer-form-info-2D'}`}>help@kaya.pro</span>
+                        <a href="mailto:info@kayastudio.pro" className={`footer-form-info-2 ${theme ? 'footer-form-info-2L' : 'footer-form-info-2D'}`}>info@kayastudio.pro</a>
                     </div>
                     
                     <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                     <div className='footer-form-info'>
                         <span className={`footer-form-info-1 ${theme ? 'footer-form-info-1L' : 'footer-form-info-1D'}`}>ТЕЛЕГРАМ</span>
-                        <span className={`footer-form-info-2 ${theme ? 'footer-form-info-2L' : 'footer-form-info-2D'}`}>kayalabs</span>
+                        <a href='https://t.me/kayastudio' className={`footer-form-info-2 ${theme ? 'footer-form-info-2L' : 'footer-form-info-2D'}`}>@kayastudio</a>
                     </div>
 
                     <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                     <div className='footer-form-info'>
                         <span className={`footer-form-info-1 ${theme ? 'footer-form-info-1L' : 'footer-form-info-1D'}`}>ЛОКАЦИЯ</span>
-                        <span className={`footer-form-info-2 ${theme ? 'footer-form-info-2LR' : 'footer-form-info-2DR'}`} >Россия, Москва</span>
+                        <span className={`footer-form-info-2 ${theme ? 'footer-form-info-2LR' : 'footer-form-info-2DR'}`} >Россия</span>
                     </div>
 
                     <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>

@@ -27,7 +27,7 @@ function Title({theme}) {
             <p id='titile-text_2'>
             Мы – молодая команда, которая помогает развивать бизнес через дизайн и разработку высокого уровня
             </p>
-            <p id='titile-text_3' className={`${theme ? 'titile-text_3L' : 'titile-text_3D'}`}>Россия, Москва</p>
+            <p id='titile-text_3' className={`${theme ? 'titile-text_3L' : 'titile-text_3D'}`}>Россия, info@kayastudio.pro</p>
         </div>
 
         {isMobile && 
@@ -35,18 +35,19 @@ function Title({theme}) {
         <div className={`titile-mobile-buttons`}>
             <div className={`titile-mobile-button1 ${theme ? 'nav-itemL' : 'nav-itemD'}`}>
               {theme ? 
-              <img src={up} alt=""/>
+              <a href="#studio"><img src={up} alt=""/></a>
               :
-              <img src={upW} alt=""/>
+              <a href="#studio"><img src={upW} alt=""/></a>
             }
             </div>
             <div className={`titile-mobile-button2 ${theme ? 'nav-itemL' : 'nav-itemD'}`}>
-                Связаться с нами
+                <a href="#contacts" className={theme ? 'aL' : 'aD'}>Связаться с нами</a>
             </div>
         </div>
         </>
         }
       </div>
+      <div id="next"></div>
     </>
   )
 }

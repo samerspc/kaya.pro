@@ -82,6 +82,7 @@
     font-size: 19px;
     line-height: 19px;
     letter-spacing: -2%;
+    text-decoration: none; 
 }
 .footer-form-info-2L {
     color: rgba(41, 44, 50, 1);

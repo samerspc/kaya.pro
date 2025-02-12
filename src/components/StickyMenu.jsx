@@ -44,10 +44,10 @@ const StickyMenu = ({handleSetTheme, theme}) => {
         <nav>
           {!isMobile && 
             <>
-            <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Студия</a>
-            <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Партнеры</a>
-            <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Проекты</a>
-            <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Контакты</a>
+            <a href="#studio" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Студия</a>
+            <a href="#clients" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Партнеры</a>
+            <a href="#projects" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Проекты</a>
+            <a href="#contacts" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Контакты</a>
             </>
           }
             

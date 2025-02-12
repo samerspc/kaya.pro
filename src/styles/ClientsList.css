@@ -9,8 +9,16 @@
     transform: translateX(-50%);
 }
 
-.clientsList-wrapper img {
+.clientsList-wrapper svg {
     width: 220px;
+}
+
+.clientL {
+    fill: A6A9AD;
+
+}
+.clientD {
+    fill: 696B6D;
 }
 
 @media screen and (max-width: 1820px) {
@@ -19,7 +27,7 @@
         gap: 20px;
     }
     
-    .clientsList-wrapper img {
+    .clientsList-wrapper svg {
         width: 220px;
     }
 }
@@ -30,7 +38,7 @@
         gap: 20px;
     }
     
-    .clientsList-wrapper img {
+    .clientsList-wrapper svg {
         width: 164px;
     }
 }
@@ -41,7 +49,7 @@
         gap: 20px;
     }
     
-    .clientsList-wrapper img {
+    .clientsList-wrapper svg {
         width: 164px;
     }
 }
@@ -64,7 +72,7 @@
         display: none; /* Для Chrome, Safari и Edge */
     }
     
-    .clientsList-wrapper img {
-        width: 118px;
+    .clientsList-wrapper svg {
+        height: 61px;
     }
 }
