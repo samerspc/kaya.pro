@@ -43,14 +43,11 @@ function CaseCard({caseItem, theme}) {
             <div className={`CaseCard-modal-layer-mobile-info`}>
                 <h1>{caseItem.name}</h1>
                 <h2>{caseItem.long}</h2>
-                <a href="#" className={`${ theme ? 'CaseCard-modal-wrapper-info-aL' : 'CaseCard-modal-wrapper-info-aD'}`}>
+                <a href={`https://${caseItem.link}`} className={`${ theme ? 'CaseCard-modal-wrapper-info-aL' : 'CaseCard-modal-wrapper-info-aD'}`}>
                     {caseItem.link}
                 </a>
                 <div className='CaseCard-modal-layer-mobile-info-img'>
                     <img src={caseItem.img} alt="" />
-                </div>
-                <div className='CaseCard-modal-layer-mobile-info-img'>
-                    <img src={caseItem.img1} alt="" />
                 </div>
             </div>
 
@@ -68,12 +65,12 @@ function CaseCard({caseItem, theme}) {
             <div className='CaseCard-modal-wrapper-info'>
                 <h1>{caseItem.name}</h1>
                 <h2>{caseItem.long}</h2>
-                <a href="#" className={`${ theme ? 'CaseCard-modal-wrapper-info-aL' : 'CaseCard-modal-wrapper-info-aD'}`}>
+                <a href={`https://${caseItem.link}`} className={`${ theme ? 'CaseCard-modal-wrapper-info-aL' : 'CaseCard-modal-wrapper-info-aD'}`}>
                     {caseItem.link}
                 </a>
             </div>
 
-            <ImageSlider images={[caseItem.img, caseItem.img1]}/>
+            <ImageSlider images={[caseItem.img]}/>
         </div>
         }
 
