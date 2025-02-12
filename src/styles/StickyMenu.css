@@ -267,7 +267,8 @@
         
     }
     .themeSetter {
-        padding: 9.13px 10px;
+        padding: 0 10px;
+        height: 40px;
         border-radius: 100px;
         display: flex;
         align-items: center;
@@ -322,7 +323,7 @@
         letter-spacing: 4%;
         position: absolute;
         left: 10px;
-        top: 29.25px;
+        top: 26px;
     }
     .modal-links {
         position: absolute;

@@ -295,7 +295,8 @@
         height: auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 10px
     }
     .titile-mobile-button1 {
         display: flex;
@@ -313,7 +314,7 @@
         align-items: center;
         justify-content: center;
         height: 56px;
-        width: 274px;
+        width: calc(100% - 66px);
         border-radius: 39px;
     }
 }
