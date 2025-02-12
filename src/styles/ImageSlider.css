@@ -17,8 +17,8 @@
     overflow: hidden;
 }
 .slide-container img {
-    /* object-fit: contain; */
-    object-fit: cover;
+    object-fit: contain;
+    /* object-fit: cover; */
 }
   
 .slide {
