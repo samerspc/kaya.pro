@@ -47,5 +47,24 @@
 }
 
 @media screen and (max-width: 600px)  {
-
+    .clientsList-wrapper {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        position: relative;
+        left: 0;
+        transform: translateX(0);
+        overflow-x: scroll;
+        scrollbar-width: none; /* Для Firefox */
+        -ms-overflow-style: none;
+    }
+    .clientsList-wrapper::-webkit-scrollbar {
+        display: none; /* Для Chrome, Safari и Edge */
+    }
+    
+    .clientsList-wrapper img {
+        width: 118px;
+    }
 }

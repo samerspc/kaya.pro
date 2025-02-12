@@ -6,9 +6,24 @@ import moonL from "/moon.svg"
 import sunD from "/sunD.svg"
 import moonD from "/moonD.svg"
 
+import mbl from "/mbl.svg"
+import mbd from "/mbd.svg"
+
 const StickyMenu = ({handleSetTheme, theme}) => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
   const [visible, setVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+    document.body.classList.add("overflowHidden");
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    document.body.classList.remove("overflowHidden");
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,14 +38,19 @@ const StickyMenu = ({handleSetTheme, theme}) => {
   }, [prevScrollPos]);
 
   return (
+    <>
     <div className={`menu ${visible ? "visible" : "hidden"}`}>
         <p id="logo" className={theme ? "logoL" : "logoD"}>kaya studio</p>
         <nav>
+          {!isMobile && 
+            <>
             <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Студия</a>
             <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Партнеры</a>
             <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Проекты</a>
             <a href="#" className={theme ? "nav-item nav-itemL" : "nav-item nav-itemD"}>Контакты</a>
-            {/* <div className="themeSetter nav-itemL"> */}
+            </>
+          }
+            
             <div className={`themeSetter ${theme ? 'nav-itemL themeSetterHoverL' : 'nav-itemD themeSetterHoverD'}`} onClick={handleSetTheme}>
                 { theme ?
                     <>
@@ -68,8 +88,36 @@ const StickyMenu = ({handleSetTheme, theme}) => {
                     </>
                 }
             </div>
+            { isMobile && 
+                  <>
+                  <div className={`mobileMenuOpen ${theme ? 'nav-itemL' : 'nav-itemD'}`} onClick={handleOpenModal}>
+                    { theme ? 
+                    <img src={mbl} alt="" />
+                    :
+                    <img src={mbd} alt="" />
+                    }
+                  </div>
+                  </>
+                }
         </nav>
     </div>
+    {isModalOpen && 
+      <div className={`modal-wrapper ${theme ? 'bgL' : 'bgD'}`}>
+        <p id="logo1" className={theme ? "logoL" : "logoD"}>kaya studio</p>
+        <div className={`CaseCard-modal-wrapper-close Fmodal ${theme ? 'CaseCard-modal-wrapper-closeL' : 'CaseCard-modal-wrapper-closeD'}`} onClick={handleCloseModal}>
+                Закрыть
+        </div>
+
+        <div className={`modal-links`}>
+          <a>Партнеры</a>
+          <a>Студия</a>
+          <a>Проекты</a>
+          <a>Контакты</a>
+        </div>
+
+      </div>
+    }
+    </>
   );
 };
 

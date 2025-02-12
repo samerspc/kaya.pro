@@ -286,5 +286,72 @@
 }
 
 @media screen and (max-width: 600px)  {
+    .CaseCard-modal-layer {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        transition: all ease-in-out 0.1s;
+        overflow-y: scroll;
+        
+    }
+    .CaseCard-modal-layer.open {
+        display: block;
+        
+    }
+    
+    .CaseCard-modal-layer-mobile-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 114px;
+        gap: 10px;
+        padding: 0 10px 0 10px;
+    }
 
+    h1 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0%;
+
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17.25px;
+        letter-spacing: 0%;
+        width: 340px;
+    }
+
+    .CaseCard-modal-layer-mobile-info a {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17.25px;
+        letter-spacing: -2%;
+        margin-bottom: 10px;
+    }
+    
+    .CaseCard-modal-layer-mobile-info-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .CaseCard-modal-layer-mobile-info-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    h2 {
+        width: 340px;
+    }
 }

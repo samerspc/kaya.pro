@@ -53,9 +53,16 @@ body {
 .bgD {
   background: rgba(9, 10, 12, 1);
 }
+.bgL {
+  background: rgba(250, 252, 255, 1);
+}
 
 .brD {
   border: 1px solid rgba(250, 252, 255, 0.05);
+}
+
+.brL {
+  border: 1px solid #E9E9EA;
 }
     
 

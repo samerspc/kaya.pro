@@ -28,7 +28,7 @@ function Studio({theme}) {
                 </div>
 
                 <div className='studio-accordion-wrapper'>
-                <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
+                    <div className={`line ${theme ? 'lineL' : 'lineD'}`}></div>
 
                     {data.map((item, index) => (
                         <>
@@ -42,10 +42,7 @@ function Studio({theme}) {
                                 <img src={theme ? plus : wPlus} alt="" 
                                     className={`${open === item.id ? 'rotation' : ''}`}
                                     />
-                                
                             
-                                
-                                
                             </div>
                             
                             <div

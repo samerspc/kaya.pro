@@ -92,7 +92,6 @@
 .nav-itemL:hover {
     background: #E9E9EA;
 }
-
 .nav-itemD {
     background: rgba(9, 10, 12, 1);
     border: 1px solid #212225;
@@ -100,6 +99,9 @@
 }
 .nav-itemD:hover {
     background: #212225;
+
+}
+.mobileMenu {
 
 }
 
@@ -241,5 +243,100 @@
 }
 
 @media screen and (max-width: 600px)  {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        padding: 18px 10px;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu nav {
+        gap: 10px;
+        align-items: end;
+    }
+    #logo {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 4%;
+        
+    }
+    .themeSetter {
+        padding: 9.13px 10px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        transition: all ease-in-out 0.1s;
+        cursor: pointer;
+    }
+    .nav-itemL:hover {background: rgba(250, 252, 255, 1);}
+    .nav-itemD:hover {background: rgba(9, 10, 12, 1);}
+    .nav-itemL {
+        background: rgba(250, 252, 255, 1);
+        border: 1.5px solid #E9E9EA;
+        color: rgba(41, 44, 50, 1);   
+    }
+    
+    .nav-itemD {
+        background: rgba(9, 10, 12, 1);
+        border: 1.5px solid #393A3D;
+        color: rgba(250, 252, 255, 1);
+    }
 
+    .mobileMenuOpen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        position: relative;
+        bottom: 0;
+    }
+    .mobileMenuOpen img {
+        width: 18px;
+        height: 4px;
+    }
+    .modal-wrapper {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 11000;
+    }
+    .Fmodal {
+        right: 10px;
+    }
+    #logo1 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 4%;
+        position: absolute;
+        left: 10px;
+        top: 29.25px;
+    }
+    .modal-links {
+        position: absolute;
+        top: 152px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    .modal-links a {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2%;
+        text-decoration: none;
+    }
 }
