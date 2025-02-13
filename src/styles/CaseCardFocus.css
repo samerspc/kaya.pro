@@ -20,30 +20,19 @@
 
 .CaseCard-modal-wrapper {
     display: none;
-    width: 1600px;
-    height: 1020px;
-    backdrop-filter: blur(35px);
-    -webkit-backdrop-filter: blur(35px);
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
     
     position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
     z-index: 10000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     transition: all ease-in-out 0.1s;
     
     flex-direction: column;
-
-}
-.modalWrapperL {
-    background-color: rgba(240, 244, 250, 0.3);
-    border: 1px solid rgba(41, 44, 50, 0.1);
-}
-
-.modalWrapperD {
-    border: 1px solid rgba(250, 252, 255, 0.1);
-    background: rgba(250, 252, 255, 0.05);
+    padding: 0 40px;
 }
 
 .CaseCard-modal-wrapper.open {
@@ -65,8 +54,6 @@
     line-height: 20.4px;
     letter-spacing: -2%;
     cursor: pointer;
-
-
 }
 
 .CaseCard-modal-wrapper-closeL {
@@ -77,43 +64,58 @@
 }
 
 .CaseCard-modal-wrapper-closeD {
-    border: 1.5px solid #212224;
+    border: 1.5px solid #606164;
 }
 .CaseCard-modal-wrapper-closeD:hover {
-    background: #212224;
+    /* background: #212224; */
+    background: rgba(250, 252, 255, 0.2);
 }
 
 .CaseCard-modal-wrapper-info {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    position: absolute;
-    left: 46px; top: 47px;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 705px;
+    margin-top: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
+
+.caseImg {
+    width: 1200px;
+    margin-top: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .CaseCard-modal-wrapper-info h1 {
     font-weight: 400;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -2%;
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: 4%;
 
 }
 
 .CaseCard-modal-wrapper-info h2 {
-    max-width: 949px;
+    text-align: center;
+    width: 619px;
     font-weight: 400;
-    font-size: 19px;
-    line-height: 21.85px;
-    letter-spacing: 0%;
+    font-size: 21px;
+    line-height: 24.15px;
+    letter-spacing: 4%;
 }
 
 .CaseCard-modal-wrapper-info a {
     font-family: "IBM Plex Sans", serif;
 
     font-weight: 400;
-    font-size: 19px;
-    line-height: 19px;
-    letter-spacing: -2%;
+    font-size: 21px;
+    line-height: 24.15px;
+    letter-spacing: 4%;
     text-decoration: underline;
     text-decoration-style: solid;
 
@@ -126,11 +128,6 @@
 }
 
 @media screen and (max-width: 1820px) {
-    .CaseCard-modal-wrapper {
-        width: 1284px;
-        height: 680px;
-    }
-    
     .CaseCard-modal-wrapper-close {
         top: 20px;
         right: 20px;
@@ -142,48 +139,51 @@
         letter-spacing: -2%;
     }
     
-    .CaseCard-modal-wrapper-info {
-        gap: 10px;
-        left: 20px; top: 44px;
+    .CaseCard-modal-wrapper {
+        padding: 0 20px;
     }
+
+    .CaseCard-modal-wrapper-info {
+        gap: 20px;
+        
+        width: 705px;
+        margin-top: 190px;
+    }
+    
+    .caseImg {
+        width: 966px;
+        margin-top: 24px;
+    }
+    
     
     .CaseCard-modal-wrapper-info h1 {
         font-weight: 400;
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: -2%;
-
+        font-size: 48px;
+        line-height: 48px;
+    
     }
     
     .CaseCard-modal-wrapper-info h2 {
-        max-width: 856px;
+        width: 619px;
         font-weight: 400;
-        font-size: 17px;
-        line-height: 19.55px;
-        letter-spacing: 0%;
-        
+        font-size: 19px;
+        line-height: 21.85px;
     }
     
     .CaseCard-modal-wrapper-info a {
         font-family: "IBM Plex Sans", serif;
+    
         font-weight: 400;
-        font-size: 17px;
-        line-height: 17px;
-        letter-spacing: -2%;
+        font-size: 19px;
+        line-height: 21.85px;
+        letter-spacing: 4%;
         text-decoration: underline;
         text-decoration-style: solid;
-        text-decoration-offset: Auto;
-        text-decoration-thickness: Auto;
-        text-decoration-skip-ink: auto;
+    
     }
 }
 
 @media screen and (max-width: 1535px) {
-    .CaseCard-modal-wrapper {
-        width: 1155px;
-        height: 680px;
-    }
-    
     .CaseCard-modal-wrapper-close {
         top: 20px;
         right: 20px;
@@ -194,49 +194,51 @@
         line-height: 20.4px;
         letter-spacing: -2%;
     }
-    
-    .CaseCard-modal-wrapper-info {
-        gap: 10px;
-        left: 20px; top: 44px;
+    .CaseCard-modal-wrapper {
+        padding: 0 20px;
     }
+
+    .CaseCard-modal-wrapper-info {
+        gap: 20px;
+        
+        width: 705px;
+        margin-top: 190px;
+    }
+    
+    .caseImg {
+        width: 966px;
+        margin-top: 40px;
+    }
+    
     
     .CaseCard-modal-wrapper-info h1 {
         font-weight: 400;
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: -2%;
-
+        font-size: 42px;
+        line-height: 42px;
+    
     }
     
     .CaseCard-modal-wrapper-info h2 {
-        max-width: 856px;
+        width: 619px;
         font-weight: 400;
         font-size: 17px;
         line-height: 19.55px;
-        letter-spacing: 0%;
-        
     }
     
     .CaseCard-modal-wrapper-info a {
         font-family: "IBM Plex Sans", serif;
+    
         font-weight: 400;
         font-size: 17px;
-        line-height: 17px;
-        letter-spacing: -2%;
+        line-height: 19.55px;
+        letter-spacing: 4%;
         text-decoration: underline;
         text-decoration-style: solid;
-        text-decoration-offset: Auto;
-        text-decoration-thickness: Auto;
-        text-decoration-skip-ink: auto;
+    
     }
 }
 
 @media screen and (max-width: 1365px) {
-    .CaseCard-modal-wrapper {
-        width: 1060px;
-        height: 673px;
-    }
-    
     .CaseCard-modal-wrapper-close {
         top: 20px;
         right: 20px;
@@ -246,42 +248,6 @@
         font-size: 17px;
         line-height: 20.4px;
         letter-spacing: -2%;
-    }
-    
-    .CaseCard-modal-wrapper-info {
-        gap: 10px;
-        left: 20px; top: 44px;
-    }
-    
-    .CaseCard-modal-wrapper-info h1 {
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 32px;
-        letter-spacing: -2%;
-
-    }
-    
-    .CaseCard-modal-wrapper-info h2 {
-        max-width: 756px;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 17.25px;
-        letter-spacing: 0%;
-
-        
-    }
-    
-    .CaseCard-modal-wrapper-info a {
-        font-family: "IBM Plex Sans", serif;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 15px;
-        letter-spacing: -2%;
-        text-decoration: underline;
-        text-decoration-style: solid;
-        text-decoration-offset: Auto;
-        text-decoration-thickness: Auto;
-        text-decoration-skip-ink: auto;
     }
 }
 

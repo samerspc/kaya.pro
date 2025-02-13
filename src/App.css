@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   transition: all ease-in-out 0.1s;
+  overflow-x: hidden;
 }
 
 .bodyL {

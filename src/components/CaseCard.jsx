@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import ImageSlider from './ImageSlider';
+import Footer from '../blocks/Footer';
 
 import '../styles/CaseCard.css';
 import '../styles/CaseCardFocus.css'
@@ -56,7 +57,7 @@ function CaseCard({caseItem, theme}) {
     }
 
         { !isMobile && 
-        <div className={`CaseCard-modal-wrapper ${open ? 'open' : ''} ${theme ? 'modalWrapperL' : 'modalWrapperD'}`}>
+        <div className={`CaseCard-modal-wrapper ${open ? 'open' : ''} ${theme ? 'bgL' : 'bgD'}`}>
 
             <div className={`CaseCard-modal-wrapper-close ${theme ? 'CaseCard-modal-wrapper-closeL' : 'CaseCard-modal-wrapper-closeD'}`} onClick={() => handleModalClose()}>
                 Закрыть
@@ -70,7 +71,8 @@ function CaseCard({caseItem, theme}) {
                 </a>
             </div>
 
-            <ImageSlider images={[caseItem.img]}/>
+            <img src={caseItem.img} className='caseImg' alt="" />
+            <Footer theme={theme} caseFocus={true} />
         </div>
         }
 

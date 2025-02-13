@@ -5,12 +5,16 @@ import arrowW from '/arrowW.svg'
 import up from '/upL.svg'
 import upW from '/upW.svg'
 
-function Footer({theme}) {
+function Footer({theme, caseFocus}) {
 
   return (
     <>
         <div className='footer-wrapper' id='contacts'>
+            {caseFocus ? 
+            <p className='footer-title'>Понравился проект<span className='geist'>?</span></p>
+            :
             <p className='footer-title'>Понравились наши проекты<span className='geist'>?</span></p>
+            }
             <div className='footer-form-wrapper'>
                 <img src={theme ? arrow : arrowW} alt="" />
                 <p className='footer-form-bigTitle'>Давайте поговорим <span className='geist'>{`:)`}</span></p>
@@ -42,13 +46,18 @@ function Footer({theme}) {
                 </div>
             </div>
 
-            <div className='footer-down'>
+            <div className={`footer-down ${caseFocus && 'caseFocusFooter'}`}>
+
                 <p><span className='geist'>©2025</span> kaya laboratories</p>
+                
+                {!caseFocus && 
                 <a href="#up">
                     <div className={`buttonUp ${ theme ? 'buttonUpLB' : 'buttonUpDB'}`}>
                         <img src={theme ? up : upW} alt="" />
                     </div>
                 </a>
+                }
+                
             </div>
 
         </div>

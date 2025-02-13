@@ -1,11 +1,13 @@
 import '../styles/ClientsList.css';
 
-import gL from '/gL.svg'
-import gD from '/gD.svg'
-import aL from '/aL.svg'
-import aD from '/aD.svg'
-import sL from '/sL.svg'
-import sD from '/sD.svg'
+import c1L from '/c1L.svg'
+import c2L from '/c2L.svg'
+import c3L from '/c3L.svg'
+import c1D from '/c1D.svg'
+import c2D from '/c2D.svg'
+import c3D from '/c3D.svg'
+
+
 
 
 function ClientsList({theme}) {
@@ -16,15 +18,27 @@ function ClientsList({theme}) {
 
             {theme ?
             <>
-            <img src={sL} alt="" />
-            <img src={gL} alt="" />
-            <img id='aip' src={aL} alt="" />
+            <img src={c1L} alt="" />
+            <img src={c2L} alt="" />
+            <img src={c3L} alt="" />
+            <img src={c1L} alt="" />
+            <img src={c2L} alt="" />
+            <img src={c3L} alt="" />
+            <img src={c1L} alt="" />
+            <img src={c2L} alt="" />
+            <img src={c3L} alt="" />
             </> 
                 :
             <>
-            <img src={sD} alt="" />
-            <img src={gD} alt="" />
-            <img id='aip' src={aD} alt="" />
+            <img src={c1D} alt="" />
+            <img src={c2D} alt="" />
+            <img src={c3D} alt="" />
+            <img src={c1D} alt="" />
+            <img src={c2D} alt="" />
+            <img src={c3D} alt="" />
+            <img src={c1D} alt="" />
+            <img src={c2D} alt="" />
+            <img src={c3D} alt="" />
             </>
             }
             
