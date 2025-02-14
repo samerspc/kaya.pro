@@ -100,7 +100,7 @@ function App() {
       <Heading text={'Партнеры'} count={'3'} id={'clients'} text_2={'Нашим решениям доверяют топовые компании страны'} theme={theme}/>
       <ClientsList theme={theme}/>
 
-      <Heading text={'Проекты'} count={'3'} id={'projects'} text_2={false} theme={theme}/>
+      <Heading text={'Проекты'} count={'6'} id={'projects'} text_2={false} theme={theme}/>
       <CaseList cases={cases} theme={theme}></CaseList>
 
       <Footer theme={theme}/>

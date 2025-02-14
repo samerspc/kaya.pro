@@ -65,6 +65,14 @@ body {
 .brL {
   border: 1px solid #E9E9EA;
 }
+
+.aL {
+  color: rgba(41, 44, 50, 1);
+}
+
+.aD {
+  color: rgba(250, 252, 255, 1);
+}
     
 
 @media screen and (max-width: 1820px) {

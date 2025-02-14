@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import ImageSlider from './ImageSlider';
 import Footer from '../blocks/Footer';
+import StickyMenu from './StickyMenu';
 
 import '../styles/CaseCard.css';
 import '../styles/CaseCardFocus.css'

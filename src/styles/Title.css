@@ -13,6 +13,11 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.zLm {
+    z-index: 999999999;
+}
 .titile-name p {
     font-family: AeonikPro300;
     font-size: 200px;
@@ -43,7 +48,7 @@
     position: relative;
 }
 
-.titile-text p {
+.titile-text p , .titile-text a {
     position: absolute;
 }
 
@@ -80,6 +85,8 @@
     line-height: 18.7px;
     letter-spacing: -0.02em;
     text-align: right;
+
+    text-decoration: none;
 
     right: 0;
     bottom: 0;
@@ -256,7 +263,7 @@
         gap: 20px;
     }
     
-    .titile-text p {
+    .titile-text p, .titile-text a {
         position: inherit;
     }
     
@@ -280,7 +287,7 @@
     }
     
     #titile-text_3 {
-        width: 220px;
+        width: 155px;
     
         font-family: "IBM Plex Mono", serif;
         font-weight: 400;

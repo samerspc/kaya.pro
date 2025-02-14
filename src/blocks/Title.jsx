@@ -27,7 +27,7 @@ function Title({theme}) {
             <p id='titile-text_2'>
             Мы – молодая команда, которая помогает развивать бизнес через дизайн и разработку высокого уровня
             </p>
-            <p id='titile-text_3' className={`${theme ? 'titile-text_3L' : 'titile-text_3D'}`}>Россия, info@kayastudio.pro</p>
+            <a id='titile-text_3' href="mailto:info@kayastudio.pro" className={`${theme ? 'titile-text_3L' : 'titile-text_3D'}`}>info@kayastudio.pro</a>
         </div>
 
         {isMobile && 

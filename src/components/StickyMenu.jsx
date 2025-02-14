@@ -109,10 +109,10 @@ const StickyMenu = ({handleSetTheme, theme}) => {
         </div>
 
         <div className={`modal-links`}>
-          <a>Партнеры</a>
-          <a>Студия</a>
-          <a>Проекты</a>
-          <a>Контакты</a>
+          <a href="#clients" onClick={handleCloseModal} className={theme ? 'aL' : 'aD'}>Партнеры</a>
+          <a href="#studio" onClick={handleCloseModal} className={theme ? 'aL' : 'aD'}>Студия</a>
+          <a href="#projects" onClick={handleCloseModal} className={theme ? 'aL' : 'aD'}>Проекты</a>
+          <a href="#contacts" onClick={handleCloseModal} className={theme ? 'aL' : 'aD'}>Контакты</a>
         </div>
 
       </div>
